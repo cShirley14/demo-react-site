@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Cloud Druid Portfolio Site"
+      content="Web site that highlights offerings by Chantal Shirley."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Cloud Druid</title>
+    <script
+      src="https://www.recaptcha.net/recaptcha/api.js"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        const $recaptcha = document.querySelector("#g-recaptcha-response");
+        if ($recaptcha) {
+          $recaptcha.setAttribute("required", "required");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
